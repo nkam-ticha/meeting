@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+header{
+  font-size: 20px;
+  margin-bottom: 30px;
+  width: 98%;
+  height: 25px;
+  background-color: #45a049;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 10px 10px;
+  
+}
+header a{
+  text-decoration: none;
+  color: white;
+}
+header a:hover{
+  text-decoration: underline;
+  color: rgb(34, 34, 34);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.title {
+  text-align: center;
+  margin: 70px 0px 15px 0px;
+  text-decoration: underline;
+}
+.highlight {
+  background-color: rgb(226, 226, 70);
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.input-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.input-form button{
+  width: 150px;
+
+}
+
+input[type="text"],
+input[type="number"],button{
+  padding: 10px 30px 10px 10px;
+  width: 32%;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  margin:2px;
+}
+button:hover {
+  background-color: #45a049;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  justify-content: start;
+}
+
+.search-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-box input, 
+.search-box button {
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+}
+.search-container button{
+  width: 100px;
+}
+
+.search-box input {
+  flex-grow: 1;
+}

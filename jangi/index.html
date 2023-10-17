@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jangi Meeting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <div class="container">
+        <header>
+            <a href="#Transaction">
+                <div>
+                    Transaction history
+                </div>
+            </a>
+
+            <a href="user.html">
+                <div>
+                    User Page
+                </div>
+            </a>
+      
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by name or amount...">
+            <button id="searchButton">Search</button>
+        </div>
+        
+        <form id="inputForm" class="input-form">
+            <input type="text" name="name" placeholder="Name">
+            <input type="number" name="amount" placeholder="Amount">
+            <button type="submit">Submit</button>
+ 
+        </form>
+                   
+        <h1 class="title">Main Table</h1>
+      
+        <table class="table" id="mainTable">
+            <thead>
+                <tr>
+                    <th id="nameHeader">Name</th>
+                    <th id="amountHeader">Amount</th>
+                    <th id="dateHeader">Date Modified</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+
+
+        <h1 id="Transaction" class="title">Transaction History</h1>
+        <table class="table" id="historyTable">
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="historyTableBody">
+            </tbody>
+        </table>
+
+        <button id="clearHistory">Clear  All Transaction History</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+    <script type="module" src="clearHistory.js"></script>
+    <script type="module"  src="login.js"></script>
+    <script src="search.js"></script>
+    <script src="sort.js"></script>
+
+
+</body>
+</html>

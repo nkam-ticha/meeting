@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jangi Meeting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  
+    <div class="container">
+
+      <div>
+        <a href="login.html">
+          Login To Get Full Control
+        </a>
+      </div>
+        <!-- Removed header and search container as they are not needed for regular users -->
+        
+        <!-- Commented out the input form
+        <form id="inputForm" class="input-form">
+            <input type="text" name="name" placeholder="Name">
+            <input type="number" name="amount" placeholder="Amount">
+            <button type="submit">Submit</button>
+        </form>
+        -->
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search by name or amount...">
+          <button id="searchButton">Search</button>
+        </div>
+      
+        <h1 class="title">Main Table</h1>
+      
+        <table class="table" id="mainTable">
+            <thead>
+                <tr>
+                    <th id="nameHeader">Name</th>
+                    <th id="amountHeader">Amount</th>
+                    <th id="dateHeader">Date Modified</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+
+        <!-- Commented out the Transaction History section
+        <h1 id="Transaction" class="title">Transaction History</h1>
+        <table class="table" id="historyTable">
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="historyTableBody">
+            </tbody>
+        </table>
+        -->
+    </div>
+    <script src="user-script.js"></script>
+    <script src="search.js"></script>
+    <script src="sort.js"></script>
+</body>
+</html>
